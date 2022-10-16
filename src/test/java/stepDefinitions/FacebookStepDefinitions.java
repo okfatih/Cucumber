@@ -19,10 +19,7 @@ public class FacebookStepDefinitions {
     }
 
 
-    @Then("User goes to {string}")
-    public void userGoesTo(String arg0) {
-        Driver.getDriver().get(ConfigReader.getProperty("facebookUrl"));
-    }
+
 
     @Then("User verifies url contains {string}")
     public void userVerifiesUrlContains(String arananKelime) {
@@ -34,4 +31,26 @@ public class FacebookStepDefinitions {
     public void userGoes(String istenenWebSitesi) {
         Driver.getDriver().get(ConfigReader.getProperty(istenenWebSitesi));
     }
+
+
+    @Then("User waits for {int} seconds")
+    public void userWaitsForSeconds(int saniye) {
+
+        try {
+            Thread.sleep(saniye*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
+/*
+    @Then("Kullanici {int} saniye bekler")
+    public void kullanici_saniye_bekler(Integer istenenSaniye) {
+
+        try {
+            Thread.sleep(istenenSaniye*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+ */

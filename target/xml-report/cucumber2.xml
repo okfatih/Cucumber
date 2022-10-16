@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="23.709">
+    <testcase classname="US1013 User could register" name="TC17 User should be able to register with the correct credentials" time="23.262">
+        <system-out><![CDATA[Given User goes  "automationUrl"............................................passed
+And User click on sign in link..............................................passed
+And User enters his or her email address on create an account part..........passed
+And User  enters his credentials............................................passed
+And User clicks on register button..........................................passed
+Then User verifies that account has been created............................passed
+And User closes webpage.....................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
