@@ -5,12 +5,21 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
+
 public class AmazonStepDefinitions {
         AmazonPage amazonPage = new AmazonPage();
+        WebDriver driver;
 
     @Given("Kullanici amazon anasayfasinda")
     public void kullanici_amazon_anasayfasinda() {
@@ -79,4 +88,8 @@ public class AmazonStepDefinitions {
         }
 
     }
+
+
+
+
 }
