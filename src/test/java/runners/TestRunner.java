@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue= "stepDefinitions",
         //tags = "@wip", US1002 yi runnerdan çalıştırmak istersek
-        tags = "@pr2",
+        tags = "@guru",
         dryRun = false
 )
 

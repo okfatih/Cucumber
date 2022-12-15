@@ -26,6 +26,7 @@ public class DemogStepDef {
     @And("User clicks  On button click, next to click me button")
     public void userClicksOnButtonClickNextToClickMeButton() {
         demogaPage.timerAlert.click();
+        String name = "Fatih";
     }
 
     @Then("User waits until Alert is visible")
